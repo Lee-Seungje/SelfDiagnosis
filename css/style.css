@@ -1,0 +1,144 @@
+/* COMMON */
+
+@font-face {
+    font-family: 'ONE-Mobile-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Title.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background: url(https://rl6cz18qh.toastcdn.net/eduro/1.9.11/css/../images/common/secondary_pw_bg.jpg) no-repeat 50% / cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* BODY */
+
+.flag{
+    position: relative;
+    top: 99px;
+    width: 140px;
+    height: 140px;
+    background: url("https://rl6cz18qh.toastcdn.net/eduro/1.9.11/css/../images/main/mi.png") no-repeat 50%/contain;
+}
+.main{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.big{
+    position: relative;
+    top: 110px;
+    font-size: 43px;
+    font-family: 'ONE-Mobile-Title';
+    color: white;
+}
+.en{
+    font-size: 12px;
+    margin: 0 0 12px;
+    color: white;
+    position: relative;
+    top: 80px;
+}
+.text{
+    text-align: center;
+}
+.btns{
+    display: inline-flex;
+    position: relative;
+    top: 90px;
+}
+.work{
+    width: 180px;
+    height: 120px;
+}
+.Work{
+    border: white;
+}
+.work{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 22px;
+    background-color: #4497c3;
+    border: solid white 0.5px;
+    font-weight: bold;
+    color: white;
+}
+.work i{
+    font-size: 50px;
+    padding: 0 0 10px 0;
+}
+.work:focus{
+    background-color: white;
+    color: #4497c3;
+}
+#on{
+    border-radius: 7px 0 0 7px;
+}
+#off{
+    border-radius: 0 7px 7px 0;
+}
+.Buttons{
+    text-decoration: none;
+    background-color: #013d77;
+    width: 450px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    top: 110px;
+    border-radius: 60px;
+    justify-content: center;
+    cursor: pointer;
+}
+.bigBTN{
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #013d77;
+    border: 0px;
+    color: white;
+    font-family: 'ONE-Mobile-Title';
+    font-size: 40px;
+}
+.smallBTM{
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    border: 0px;
+    background-color: rgb(255, 208, 0);
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 30px;
+    font-family: 'ONE-Mobile-Title';
+}
+.linkA{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 250px;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+.linkA i{
+    position: relative;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+}
