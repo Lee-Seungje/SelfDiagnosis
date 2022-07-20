@@ -12,69 +12,79 @@
 <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <div class="logo">
-        
+    <div class="pad">
+        <div class="logo"></div>   
     </div>
     <nav class="nav"><p>로그인</p></nav>
-    <div class="underNav">
-        <div class="login" id="OOO">
-            <div class="back">
-                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+    <div class="main">
+        <div class="underNav">
+            <div class="login" id="OOO">
+                <div class="back">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                </div>
+                <div class="block">
+                    <p class="big">로그인</p>
+                    <p class="small">Login</p>
+                </div>
             </div>
-            <p class="big">로그인</p>
-            <p class="small">Login</p>
-        </div>
-        <div class="check" id="OOO">
-            <div class="back">
-                <i class="fa-solid fa-temperature-full"></i>
+            <div class="check" id="OOO">
+                <div class="back">
+                    <i class="fa-solid fa-temperature-full"></i>
+                </div>
+                <div class="block">
+                    <p class="big">진단참여</p>
+                    <p class="small">Check</p>
+                </div>
             </div>
-            <p class="big">진단참여</p>
-            <p class="small">Check</p>
-        </div>
-        <div class="Results" id="OOO">
-            <div class="back">
-                <i class="fa-solid fa-paper-plane"></i>
+            <div class="Results" id="OOO">
+                <div class="back">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </div>
+                <div class="block">
+                    <p class="big">결과확인</p>
+                    <p class="small">Results</p>
+                </div>
             </div>
-            <p class="big">결과확인</p>
-            <p class="small">Results</p>
         </div>
+        <p class="information">* 건강상태 자가진단은 진단 대상자 정보를 확인 후 참여가 가능합니다.</p>
+        <table class="list">
+            <tr class="school">
+                <td class="name">
+                    <a id="school">학교<p>School</p></a>
+                </td>
+                <td class="search" id="noName">
+                    <div class="blank"><p></p></div>
+                    <button class="BTN">검색<p>Search</p></button>
+                </td>
+            </tr>
+            <tr class="Name">
+                <td class="name" id="Name">
+                    <a id="name">성명<p>Name</p></a>
+                </td>
+                <td class="InputName" id="noName">
+                    <input type="text" class="NameInput">
+                </td>
+            </tr>
+            <tr class="birth">
+                <td class="name">
+                    <a id="birth">생년월일<p>Date of Birth</p></a>
+                </td>
+                <td class="birthInput" id="noName">
+                    <input type="text" class="Birth" placeholder="YYMMDD">
+                    <p>* 6자리 입력</p>
+                </td>
+            </tr>
+            <tr class="pw">
+                <td class="name">
+                    <a id="pw">비밀번호<p>Password</p></a>
+                </td>
+                <td class="pwInput" id="noName">
+                    <input type="password" class="Pw" placeholder="비밀번호입력">
+                    <p>* 신규등록 대상자 또는 비밀번호를 초기화한 경우 초기 비밀번호는 생년월일의 뒷 네자리(MMDD)입니다.</p>
+                </td>
+            </tr>
+        </table>
+        <button class="bottom">확인/Confirm</button>
     </div>
-    <p class="information">* 건강상태 자가진단은 진단 대상자 정보를 확인 후 참여가 가능합니다.</p>
-    <div class="school">
-        <div class="name">
-            <a id="school">학교<p>School</p></a>
-        </div>
-        <div class="search">
-            <div class="blank"><p></p></div>
-            <button>검색<p>Search</p></button>
-        </div>
-    </div>
-    <div class="Name">
-        <div class="name">
-            <a id="name">성명<p>Name</p></a>
-        </div>
-        <div class="search">
-            <div class="blank"><p></p></div>
-        </div>
-    </div>
-    <div class="birth">
-        <div class="name">
-            <a id="birth">생년월일<p>Date of Birth</p></a>
-        </div>
-        <div class="search">
-            <input type="text" class="Birth" placeholder="YYMMDD">
-            <p>* 6자리 입력</p>
-        </div>
-    </div>
-    <div class="pw">
-        <div class="name">
-            <a id="pw">비밀번호<p>Password</p></a>
-        </div>
-        <div class="search">
-            <input type="password" class="Pw" placeholder="비밀번호입력">
-            <p>* 신규등록 대상자 또는 비밀번호를 초기화한 경우 초기 비밀번호는 생년월일의 뒷 네자리(MMDD)입니다.</p>
-        </div>
-    </div>
-    <button class="bottom">확인/Confirm</button>
 </body>
 </html>
