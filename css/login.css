@@ -1,7 +1,19 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     overflow-x: hidden;
+}
+nav{
+    position: fixed;
+}
+.pad{
+    width: 1800px;
+    background-color: white;
+}
+.main{
+    z-index: -2;
+    position: relative;
+    top: 170px;
 }
 .logo{
     width: 175px;
@@ -69,53 +81,135 @@ body{
 .block .small{
     font-size: 12px;
 }
-.school{
-    display: flex;
-}
-.list tr .name{
-    width: 700px;
-    height: 100px;
+.SchoolName, .NameName, .BirthName, .PasswordName{
     background-color: #e7f3f7;
+    border-right: solid #c2c2c2 0.5px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 23px;
 }
-.blank{
-    width: 340px;
-    height: 70px;
-    border: solid #c2c2c2 0.5px;
-    margin: 13px;
+.SchoolSearch, .NameInput, .BirthInput, .PasswordInput{
+    width: 1000px;
+    padding: 20px 22px;
 }
-.BTN{
-    height: 72px;
-    width: 100px;
-    border: 0px;
-    margin: 13px 0 13px -5px;
+.Serach{
+    margin-left: 7px;
+    padding: 0 25px ;
+    width: 500px;
+    width: 60px;
     background-color: #66788e;
     color: white;
-    font-size: 25px;  
+    vertical-align: middle;
+    text-align: center;
+    align-items: center;
 }
-td{
-    border: solid #c2c2c2 0.5px;
+.BigSearch{
+    padding-top: 10px;
+    font-size: 25px;
+    margin: 0;
+    cursor: pointer;
 }
-.search{
+.Serach .SmallSearch{
+    margin: 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+.name{
     display: flex;
 }
-.InputName, .birthInput, .pwInput{
-    background-color: white;
-    z-index: 1;
-    position: relative;
-    left: -1467px;
-    width: 10000px;
+td ,th{
+    border-bottom: solid #c2c2c2 0.5px;
 }
-.list tr #noName{
-    z-index: 3;
-    background-color: white;
-    padding: 0 1000px 0 0;
+.SchoolName, .SchoolSearch{
+    border-top: solid #007eda 2px;
 }
-td p {
+.SchoolName p, .NameName p, .BirthName p, .PasswordName p{
+    margin: 0;
+}
+.name{
+    font-size:25px;
+    font-weight: bolder;
+}
+#name{
+    color: red;
+}
+.SmallBirth, .SmallSchool, .SmallName, .SmallPW{
     font-size: 12px;
+    font-weight: 100;
+}
+.blank{
+    border: solid #c2c2c2 0.5px;
+    width: 330px;
+    height: 70px;
+    cursor: pointer;
+}
+.SchoolSearch{
+    display: flex;
 }
 table{
-    border-collapse : collapse;
+    border-collapse: collapse;
 }
-td{
-    text-align: left;
+._{
+    padding: 0 650px 0 0;
+}
+.nameinput{
+    cursor: pointer;
+    height: 72px;
+    width: 1000px;
+    border: solid #c2c2c2 0.5px;
+}
+.birthinput{
+    cursor: pointer;
+    height: 72px;
+    border: solid #c2c2c2 0.5px;
+    font-size: 20px;
+    width: 170px;
+    outline: none;
+}
+.BirthInput p, .PasswordInput p{
+    font-size: 25px;
+    color: #666666;
+}
+.nameinput:focus{
+    outline: none;
+    font-size: 30px;
+}
+.PWinput{
+    cursor: pointer;
+    height: 72px;
+    width: 1000px;
+    font-size: 20px;
+    border: solid #c2c2c2 0.5px;
+}
+.PWinput:focus{
+    outline: none;
+}
+.bottom{
+    width: 100%;
+    height: 80px;
+    margin: 30px 0;
+    background-color: #007eda;
+    border: 0px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.bottomdiv{
+    background-color: #f1f1f1;
+}
+.flex{
+    display: flex;
+    font-weight: bolder;
+}
+.red{
+    color: red;
+}
+.words{
+    padding: 30px;
+    font-size: 25px;
+    color: #666666;
+}
+.words p{
+    margin: 7px 0 7px 0;
 }

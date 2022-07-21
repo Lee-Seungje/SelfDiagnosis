@@ -12,10 +12,12 @@
 <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
-    <div class="pad">
-        <div class="logo"></div>   
-    </div>
-    <nav class="nav"><p>로그인</p></nav>
+    <nav>
+        <div class="pad">
+            <div class="logo"></div>   
+        </div>
+        <nav class="nav"><p>로그인</p></nav>
+    </nav>
     <div class="main">
         <div class="underNav">
             <div class="login" id="OOO">
@@ -48,43 +50,62 @@
         </div>
         <p class="information">* 건강상태 자가진단은 진단 대상자 정보를 확인 후 참여가 가능합니다.</p>
         <table class="list">
-            <tr class="school">
-                <td class="name">
-                    <a id="school">학교<p>School</p></a>
-                </td>
-                <td class="search" id="noName">
-                    <div class="blank"><p></p></div>
-                    <button class="BTN">검색<p>Search</p></button>
+            <tr class="School">
+                <th class="SchoolName">
+                    <div class="name"><p class="BigSchool">학교 <p id="name"> *</p></p></div>
+                    <p class="SmallSchool">School</p>
+                    <p class="_"></p>
+                </th>
+                <td class="SchoolSearch">
+                    <div class="blank"></div>
+                    <div class="Serach">
+                        <p class="BigSearch">검색</p>
+                        <p class="SmallSearch">Search</p>
+                    </div>
                 </td>
             </tr>
             <tr class="Name">
-                <td class="name" id="Name">
-                    <a id="name">성명<p>Name</p></a>
-                </td>
-                <td class="InputName" id="noName">
-                    <input type="text" class="NameInput">
+                <th class="NameName">
+                    <div class="name"><p class="BigName">성명 <p id="name"> *</p></p></div>
+                    <p class="SmallName">Name</p>
+                    <p class="_"></p>
+                </th>
+                <td class="NameInput">
+                    <input type="text" class="nameinput">
                 </td>
             </tr>
-            <tr class="birth">
-                <td class="name">
-                    <a id="birth">생년월일<p>Date of Birth</p></a>
-                </td>
-                <td class="birthInput" id="noName">
-                    <input type="text" class="Birth" placeholder="YYMMDD">
+            <tr class="Birth">
+                <th class="BirthName">
+                    <div class="name"><p class="BigBirth">생년월일 <p id="name"> *</p></p></div>
+                    <p class="SmallBirth">Date of Birth</p>
+                    <p class="_"></p>
+                </th>
+                <td class="BirthInput">
+                    <input type="text" class="birthinput" placeholder="YYMMDD">
                     <p>* 6자리 입력</p>
                 </td>
             </tr>
-            <tr class="pw">
-                <td class="name">
-                    <a id="pw">비밀번호<p>Password</p></a>
-                </td>
-                <td class="pwInput" id="noName">
-                    <input type="password" class="Pw" placeholder="비밀번호입력">
-                    <p>* 신규등록 대상자 또는 비밀번호를 초기화한 경우 초기 비밀번호는 생년월일의 뒷 네자리(MMDD)입니다.</p>
+            <tr class="Password">
+                <th class="PasswordName">
+                    <div class="name"><p class="BigPW">비밀번호 <p id="name"> *</p></p></div>
+                    <p class="SmallPW">Password</p>
+                    <p class="_"></p>
+                </th>
+                <td class="PasswordInput">
+                    <input type="password" class="PWinput" placeholder="비밀번호를 입력하세요">
+                    <p>* 신규등록 대상자 또는 비밀번호를 초기화한 경우 초기 비밀번호는 생년월일의 뒷네자리 (MMDD)입니다.</p>
                 </td>
             </tr>
         </table>
-        <button class="bottom">확인/Confirm</button>
+        <button class="bottom">확인 / Confirm</button>
+        <div class="bottomdiv">
+            <div class="words">
+                <div class="flex"><p class="Fir">※ 개인정보를 부당한 수단이나 방법으로 취득하여 도용한 경우<p class="red">「개인정보 보호법」 제71조에 의거 처벌</p><p>받을 수 있습니다.</p></p></div>
+                <p class="common">※ 본인확인이 불가한 경우 학교(기관)로 문의하시기 바랍니다.</p>
+                <p class="common">※ 비밀번호 분실 시 학교(기관)로 비밀번호 초기화를 요청하시기 바랍니다.</p>
+                <p class="common">※ Contact your school if identification is unavailable.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
