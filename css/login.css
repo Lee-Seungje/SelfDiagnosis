@@ -46,7 +46,7 @@ nav{
 .pad{
     padding: 24px 60px;
 }
-.underNav #OOO i{
+.underNav .check i, .underNav .Results i{
     font-size: 40px;
     color: #c2c2c2;
 }
@@ -217,4 +217,15 @@ table{
 }
 .words p{
     margin: 7px 0 7px 0;
+}
+#origina{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgb(248, 210, 105);
+    border: 0px;
+}
+#I{
+    color: white;
+    font-size: 40px;
 }

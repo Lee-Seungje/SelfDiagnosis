@@ -1,0 +1,127 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(243, 241, 241);
+}
+header{
+    display: flex;
+    padding: 0 2em;
+    align-items: center;
+    border-bottom: solid #dddada 0.5px;
+    height: 100px;
+    font-size: 40px;
+    background-color: white;
+    text-align: center;
+}
+header p{
+    margin-left: auto; margin-right: auto;
+    color: #073765;
+    font-weight: bolder;
+}
+header i{
+    color: rgb(59, 151, 212);
+    position: relative;
+}
+.mid{
+    height: 550px;
+    margin: 30px 80px 50px 80px;
+    background-color: white;
+    border: solid #dddada 0.5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.opction{
+    display: flex;   
+    margin-bottom: 20px;
+}
+#border{
+    border-bottom: rgb(59, 151, 212) solid 2px;
+}
+select{
+    width: 1162px;
+    height: 80px;
+    border-radius: 5px;
+    font-size: 28px;
+    padding-left: 21px;
+}
+.opctions{
+    padding: 80px 65px 10px 65px;
+}
+input{
+    width: 900px;
+    height: 80px;
+}
+button{
+    width: 250px;
+    height: 80px;
+    border: 0px;
+    background-color: #66788e;
+    color: white;
+}
+#big{
+    font-size: 28px;
+}
+p{margin: 0;}
+.big, .small{
+    color: #3070b0;
+}
+.small{
+    font-size: 12px;
+}
+.big{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.CP{
+    position: relative;
+    left: 380px;
+}
+.SL{
+    position: relative;
+    left: 366px;
+}
+.inputDIV{
+    position: relative;
+    left: 367px;
+}
+.inputDIV input{
+    border-radius: 5px;
+    border: solid #888686 0.5px;
+    margin-bottom: 30px;
+    height: 78px;
+}
+button{
+    position: relative;
+    top: -2px;
+}
+.bottomP{
+    font-size: 24px;
+    color: rgb(131, 130, 130);
+}
+footer{
+    margin: 0 80px;
+    background-color:#073765;
+    border-radius: 5px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.small{
+    position: relative;
+    left: -2px;
+}
+#a{
+    position: relative;
+    left: -10px;
+}
+#b{
+    position: relative;
+    left: -8px;
+}

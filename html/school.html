@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <link rel="stylesheet" href="../css/shcool.css">
+    <script 
+    src="https://kit.fontawesome.com/0d3908869d.js" 
+    crossorigin="anonymous"
+></script>
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-arrow-left"></i>
+        <p class="SS">학교검색</p>
+    </header>
+    <div class="mid">
+        <div class="opctions">
+            <div class="opction">
+                <div class="name">
+                    <p class="big">시/도 *</p>
+                    <p class="small">City/Province</p>
+                </div>
+                <select name="CP" id="CP" class="CP">
+                    <option value="">필수선택</option>
+                    <option value="seoul">서울특별시</option>
+                    <option value="busan">부산광역시</option>
+                    <option value="inchon">인천광역시</option>
+                    <option value="gwangju">광주광역시</option>
+                    <option value="daejeon">대전광역시</option>
+                    <option value="woolsan">울산광역시</option>
+                    <option value="sejong">세종특별자치시</option>
+                    <option value="gyeonggee">경기도</option>
+                    <option value="kangwon">강원도</option>
+                    <option value="choongcheong">충청도</option>
+                    <option value="jeonla">전라도</option>
+                    <option value="kyeongsang">경상도</option>
+                    <option value="jeju">제주특별자치도</option>
+                </select>
+            </div>
+            <div class="opction">
+                <div class="name">
+                    <p class="big">학교급 *</p>
+                    <p class="small" id="a">School Level</p>
+                </div>
+                <select name="SL" id="SL" class="SL">
+                    <option value="">필수선택</option>
+                    <option value="you">유치원</option>
+                    <option value="cho">초등학교</option>
+                    <option value="joong">중학교</option>
+                    <option value="go">고등학교</option>
+                    <option value="teuck">특수학교 등</option>
+                </select>
+            </div>
+            <div class="opction" id="border">
+                <div class="name">
+                    <p class="big">학교명 *</p>
+                    <p class="small" id="b">School Name</p>
+                </div>
+                <div class="inputDIV">
+                    <input type="text" class="scINPUT">
+                    <button>
+                        <p id="big">검색</p>
+                        <p id="small" >Search</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <p class="bottomP">학교명을 입력 후 검색 버튼을 클릭하십시오.</p>
+    </div>
+    <footer>
+        <div class="foot">
+            <p>학교선택 / Select School</p>
+        </div>
+    </footer>
+</body>
+</html>
