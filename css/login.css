@@ -2,6 +2,8 @@ body{
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     overflow-x: hidden;
+    z-index: -2;
+    position: relative;
 }
 nav{
     position: fixed;
@@ -107,6 +109,9 @@ nav{
     padding-top: 10px;
     font-size: 25px;
     margin: 0;
+    cursor: pointer;
+}
+.SchoolSearch .blank, .Serach{
     cursor: pointer;
 }
 .Serach .SmallSearch{
