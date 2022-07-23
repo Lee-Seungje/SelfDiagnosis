@@ -1,0 +1,130 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.rightNav{
+    position: absolute;
+    right: 70px;
+    color: white;
+    top: 00px;
+    margin: 18px 18px;
+    font-size: 25px;
+}
+nav{
+    z-index: 0;
+}
+.Logo{
+    width: 175px;
+    height: 55px;
+    background: url("https://rl6cz18qh.toastcdn.net/eduro/1.9.11/css/../images/common/logo_moe.png") no-repeat 50% / contain;
+}
+.menu i{
+    color:silver;
+    font-size: 40px;
+}
+.pad{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.menu p{
+    color:silver;
+    margin: 0;
+    font-weight: bold;
+}
+.menu{
+    position: relative;
+    right: -1550px;
+}
+.move{
+    position: absolute;
+    left: 1970px;
+    background-color: #1472ab;
+    width: 350px;
+    height: 969px;
+    position: absolute;
+    right: 0px;
+    color: white;
+    top: 179px;
+    transition:all 0.3s ease-in-out;
+}
+.content{
+    border-bottom: 1px solid #105e8f;
+    height: 82px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.content i {
+    font-size: 40px;
+    position: relative;
+    left: 20px;
+}
+.content p {
+    position: relative;
+    right: -50px;
+    font-size: 28px;
+}
+#b{
+    position: relative;
+    left: 10px;
+}
+#b p{
+    position: relative;
+    left: 60px;
+}
+#c{
+    position: relative;
+    left: 6px;
+}
+#c p{
+    position: relative;
+    left: 53px;
+}
+#d{
+    position: relative;
+    left: 8px;
+}
+.BTM{
+    font-size: 20px;
+    border: 1px solid #2198ea;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 5px;
+    position: relative;
+    top: 420px;
+}
+.none{
+    display: flex;
+    justify-content: center;
+}
+.content i {
+    color: #2198ea;
+}
+.moveLeft{
+    transform: translateX(-390px);
+    transition:all 0.3s ease-in-out;
+}
+.dark{
+    filter: brightness(70%);
+    transition:all 0.3s ease-in-out;
+}
+#origina{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: rgb(248, 210, 105);
+    border: 0px;
+}
+#I{
+    color: white;
+    font-size: 40px;
+}
+#s{
+    font-size: 40px;
+    color: #c2c2c2;
+}
