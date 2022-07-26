@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:active{
+    color: white;
+}
+
+.blue{
+    color: #2198ea;
+}
+.moveLeft{
+    transform: translateX(-390px);
+    transition:all 0.3s ease-in-out;
+}
+.dark{
+    filter: brightness(70%);
+    transition:all 0.3s ease-in-out;
+}

@@ -1,5 +1,6 @@
 const OInclick = document.querySelector(".foot");
 const bottom = document.querySelector("#oriori");
+const onwerText = document.querySelector(".onwerText");
 function handleClick(){
     const inputValue = document.querySelector(".scINPUT").value;
     console.log(inputValue);
