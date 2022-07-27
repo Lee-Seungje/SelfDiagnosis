@@ -40,24 +40,32 @@ li{
 }
 .Brank, .brank{
     border: solid #c2c2c2 0.5px;
-    width: 100%;
     height: 77px;
     cursor: pointer;
     background-color: #cccccc;
     font-size: 25px;
+    padding-left: 20px;
+}
+.Brank{
+    width: 98%;
+}
+.brank{
+    width: 110%;
 }
 .InnerTextText{
     font-size: 25px;
 }
-.birthinput{
-    width: 100%;
-}
 .BigPW{
     font-size: 25px;
+    font-weight: bold;
 }
 #oriori{
     margin-bottom: 0;
 }
 .PasswordInput p{
     margin: 0;
+}
+table input{
+    padding-left: 20px;
+    height: 77px;
 }
