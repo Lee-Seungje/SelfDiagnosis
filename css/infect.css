@@ -69,3 +69,6 @@ table input{
     padding-left: 20px;
     height: 77px;
 }
+th p{
+    cursor: pointer;
+}
