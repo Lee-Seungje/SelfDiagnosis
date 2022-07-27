@@ -1,11 +1,9 @@
 const CClick = document.querySelector(".menu");
 const move = document.querySelector(".move");
-const body = document.querySelector(".main");
 const onLink = document.querySelector(".grayFoot");
 const onGreen = document.querySelector(".greenFoot");
 function onClick(){
     move.classList.toggle("moveLeft");
-    body.classList.toggle("dark");
     CClick.classList.toggle("blue");
 }
 function onlink(){

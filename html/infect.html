@@ -64,10 +64,68 @@
             <li>
                 <p class="redFont">❉ "학교보건법"에 따른 코로나19 치료 및 예방조치에 필요한 자료입니다.</p>
             </li>
-            <li>  
+            <li>      
                 <p class="redFont">❉ 최근 7일이내 방역기관에서 통보받은 확진일자 및 검체채취일을 입력하는 곳입니다. 주의하여 입력해 주십시오.</p>
             </li>
         </div>
+        <table class="list">
+            <tr class="School">
+                <th class="SchoolName">
+                    <div class="name"><p class="BigSchool">학교 <p id="name"></p></p></div>
+                    <p class="SmallSchool">School</p>
+                    <p class="_"></p>
+                </th>
+                <td class="SchoolSearch">
+                    <div class="brank">
+                        <p class="InnerTextText"></p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="Name">
+                <th class="NameName">
+                    <div class="name"><p class="BigName">성명 <p id="name"></p></p></div>
+                    <p class="SmallName">Name</p>
+                    <p class="_"></p>
+                </th>
+                <td class="NameInput">
+                    <div class="Brank">
+                        <p class="InnerTextText"></p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="Birth">
+                <th class="BirthName">
+                    <div class="name"><p class="BigBirth">확진일자 <p id="name"> *</p></p></div>
+                    <p class="SmallBirth">Confirmation date</p>
+                    <p class="_"></p>
+                </th>
+                <td class="BirthInput">
+                    <input type="date" class="birthinput">
+                </td>
+            </tr>
+            <tr class="Password">
+                <th class="PasswordName">
+                    <div class="name"><p class="BigPW">검체채취일 <p id="name"> *</p></p></div>
+                    <p class="BigPW">(PCR 등 검사일)</p>
+                    <p class="SmallPW">COVID-test date</p>
+                    <p class="_"></p>
+                </th>
+                <td class="PasswordInput">
+                    <p>❉ 등교(출근)예정일을 알려드리기 위해 보건소 또는 병원에서 검사받은 날을 입력해주세요.</p>
+                    <input type="date" class="PWinput">
+                </td>
+            </tr>
+            <tr class="Password">
+                <th class="PasswordName">
+                    <div class="name"><p class="BigPW">등교(출근)예정일 <p id="name"> *</p></p></div>
+                    <p class="SmallPW">Expected date of school(work)</p>
+                    <p class="_"></p>
+                </th>
+                <td class="PasswordInput">
+                    <input type="date" class="PWinput">
+            </tr>
+        </table>
+        <button class="bottom" id="oriori">저장</button>  
     </div>
 </body>
 </html>
