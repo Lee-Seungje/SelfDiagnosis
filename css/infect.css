@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: scroll;
 }
 a{
     text-decoration: none;
@@ -9,15 +10,22 @@ a{
 a:active{
     color: white;
 }
-
-.blue{
-    color: #2198ea;
+.Menu{
+    padding: 210px 70px 70px 70px;
 }
-.moveLeft{
-    transform: translateX(-390px);
-    transition:all 0.3s ease-in-out;
+.upVar{
+    background-color: #f1f1f1;
+    padding: 25px;
 }
-.dark{
-    filter: brightness(70%);
-    transition:all 0.3s ease-in-out;
+.redFont{
+    font-size: 25px;
+    color: rgb(204, 7, 7);
+    font-weight: bolder;
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style:none;
+    padding: 0 0 0  20px;
+    margin: 5px 0;
 }
