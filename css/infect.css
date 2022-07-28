@@ -72,3 +72,8 @@ table input{
 th p{
     cursor: pointer;
 }
+table input{
+    font-size: 30px;
+    font-weight: bold;
+    color: #686666;
+}
