@@ -1,3 +1,7 @@
+const ConfirmationDate = document.querySelector(".BirthInput .PWinput");
+const testDate = document.querySelector(".PasswordInput .PWinput");
+const ExpectedDate = document.querySelector("#ExpectedInput");
+
 function noteFill(){
     const newName = sessionStorage.getItem("name");
     const newSchool = sessionStorage.getItem("school");
@@ -6,10 +10,6 @@ function noteFill(){
     fillName.textContent = newSchool;
     fillSchool.textContent = newName;
     console.log(newName, newSchool);
-    
-    const ConfirmationDate = document.querySelector(".BirthInput .PWinput");
-    const testDate = document.querySelector(".PasswordInput .PWinput");
-    const ExpectedDate = document.querySelector("#ExpectedInput");
     const ToDay = new Date();
     const date = String(ToDay.getDate()).padStart(2, "0");
     const year = String(ToDay.getFullYear()).padStart(2, "0");
@@ -41,6 +41,38 @@ function noteFill(){
         ExpectedDate.value = ExpectedSum;
     }
 }
+function handleToFirstInput(){
+    console.log(ConfirmationDate.value);
+    const Convalue = ConfirmationDate.value;
+    const Year = Convalue.substring(0, 4);
+    const orange = Convalue.substring(5);
+    const Month = orange.substring(0, 2);
+    const Date = Convalue.substring(8);
+    console.log(Year);
+    console.log(Month);
+    console.log(Date);
+    const mathYear = Math.ceil(Year);
+    const mathMonth = Math.ceil(Month);
+    const mathDate = Math.ceil(Date);
+
+    const testdate = String(mathDate-1).padStart(2, "0");
+    const testSum = `${Year}-${Month}-${testdate}`;
+    testDate.value = testSum;
+
+    if((mathDate+6)>=31){
+        const Expectedmonth = String(mathMonth+1).padStart(2, "0");
+        const Expecteddate = String(mathDate-25).padStart(2, "0");
+        const ExpectedSum = `${Year}-${Expectedmonth}-${Expecteddate}`;
+        ExpectedDate.value = ExpectedSum;
+    }
+    else{
+        const Expecteddate = String(mathDate+6).padStart(2, "0");
+        const ExpectedSum = `${Year}-${Month}-${Expecteddate}`;
+        ExpectedDate.value = ExpectedSum;
+    }
+}
+
+
 
 noteFill();
-// setInterval(noteFill, 1000);
+ConfirmationDate.addEventListener("input", handleToFirstInput);
