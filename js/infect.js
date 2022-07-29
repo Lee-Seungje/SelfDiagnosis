@@ -102,12 +102,20 @@ function handleToClick(){
     if (confirm("저장하시겠습니까?\n잘못 입력한 경우, 오늘안(등록일)에는 삭제 후 재등록 할 수 있습니다.\n내일부터는 학교에 연락하여 수정해 주십시오.") == true){ 
         sessionStorage.setItem("nomal", true);
         location.href="../html/main.html";
+        sessionStorage.setItem("date1", ConfirmationDate.value);
+        sessionStorage.setItem("date2", testDate.value);
+        sessionStorage.setItem("date3", ExpectedDate.value);
         }
     else{
         sessionStorage.removeItem("nomal");
     }
 }
-
+function alertfunction(){
+    alert("이미 확진내용이 등록되어 입력되지 않습니다.\n변경이 필요한 경우 학교에 연락하시면 됩니다.");
+}
+function onREdClick(){
+    location.href = '../html/remove.html'
+}
 function changeColor(){
     const nomaL = sessionStorage.getItem("nomal");
     if(nomaL){
@@ -122,6 +130,8 @@ function changeColor(){
         WillP.innerText = '등교\n중지';
         const grayFoot = document.querySelector(".grayFoot");
         grayFoot.style.backgroundColor = "orange";
+        grayFoot.addEventListener("click", alertfunction);
+        WillRed.addEventListener("click", onREdClick);
     }
 }
 

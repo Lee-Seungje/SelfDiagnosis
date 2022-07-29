@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove</title>
+    <script 
+    src="https://kit.fontawesome.com/0d3908869d.js" 
+    crossorigin="anonymous"
+></script>
+<script src="../js/remove.js" defer></script>
+<script src="../js/infect.js" defer></script>
+<link rel="stylesheet" href="../css/main.css">
+<link rel="stylesheet" href="../css/login.css">
+<link rel="stylesheet" href="../css/infect.css">
+<script src="../js/move.js" defer></script>
+<link rel="stylesheet" href="../css/remove.css">
+</head>
+<body>
+    <div class="move">
+        <div class="content" id="a">
+            <i class="fa-regular fa-hospital"></i>
+            <p>진료소찾기</p>
+        </div>
+        <div class="content" id="b">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>코로나19<br>시도정보</p>
+        </div>
+        <div class="content" id="c">
+            <i class="fa-solid fa-gear"></i>
+            <p>비밀번호변경</p>
+        </div>
+        <div class="content" id="d">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            <p>로그아웃</p>
+        </div>
+        <div class="none">
+            <div class="BTM">
+                <p>UI ver. 1.9.11</p>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="pad">
+            <a href="../html/main.html">
+                <div class="Logo"></div>
+            </a>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+                <p>MENU</p> 
+            </div>
+        </div>
+        <nav class="nav">
+            <p>방역기관 통보내역 삭제
+                <a href="../html/main.html">
+                    <div class="rightNav">
+                        <i class="fa-solid fa-house"></i>
+                        처음으로
+                    </div>
+                </a>
+            </p>
+        </nav>
+    </nav>
+    <div class="mainVar">
+        <div class="upVar">
+            <li>
+                <p class="redFont">❉ 삭제 후 재등록이 가능합니다.</p>
+            </li>
+        </div>
+        <table class="list">
+            <tr class="School">
+                <th class="SchoolName">
+                    <div class="name"><p class="BigSchool">학교 <p id="name"></p></p></div>
+                    <p class="SmallSchool">School</p>
+                    <p class="_"></p>
+                </th>
+                <td class="SchoolSearch">
+                    <div class="brank">
+                        <p class="InnerTextText"></p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="Name">
+                <th class="NameName">
+                    <div class="name"><p class="BigName">성명 <p id="name"></p></p></div>
+                    <p class="SmallName">Name</p>
+                    <p class="_"></p>
+                </th>
+                <td class="NameInput">
+                    <div class="Brank">
+                        <p class="InnerTextText"></p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="Birth">
+                <th class="BirthName">
+                    <div class="name"><p class="BigBirth">확진일자 <p id="name"></p></p></div>
+                    <p class="SmallBirth">Confirmation date</p>
+                    <p class="_"></p>
+                </th>
+                <td class="BirthInput">
+                    <div class="brank" id="firstBrank">
+                        <p class="InnerTextText"></p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="Password">
+                <th class="PasswordName">
+                    <div class="name"><p class="BigPW">검체채취일 <p id="name"></p></p></div>
+                    <p class="BigPW">(PCR 등 검사일)</p>
+                    <p class="SmallPW">COVID-test date</p>
+                    <p class="_"></p>
+                </th>
+                <td class="PasswordInput">
+                    <div class="brank" id="secondBrank">
+                        <p class="InnerTextText"></p>
+                    </div>
+                </td>
+            </tr>
+            <tr class="Password">
+                <th class="PasswordName">
+                    <div class="name"><p class="BigPW">등교(출근)예정일 <p id="name"></p></p></div>
+                    <p class="SmallPW">Expected date of school(work)</p>
+                    <p class="_"></p>
+                </th>
+                <td class="PasswordInput">
+                    <div class="brank" id="thirdBrank">
+                        <p class="InnerTextText"></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <button class="bottom" id="oriori">삭제</button>  
+    </div>
+</body>
+</html>

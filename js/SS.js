@@ -6,7 +6,7 @@ function handleClick(){
     console.log(inputValue);
     if(inputValue=='')
     {
-        alert("안 돼 돌아가");
+        alert("모든 항목을 입력하세요");
     }
     else{
         sessionStorage.setItem("school", inputValue);
@@ -26,7 +26,7 @@ function secondHandleClick(){
         location.href="../html/main.html";
     }
     else{
-        alert("안 돼 돌아가");
+        alert("모든 항목을 입력하세요");
     }
 }
 function mainFunction(){
