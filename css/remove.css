@@ -1,10 +1,12 @@
 .upVar{
     position: relative;
-    top: 190px;
-    z-index: -1;
 }
 .mainVar{
     padding: 20px 74px;
+    position: relative;
+    z-index: -1;
+    top: 200px;
+
 }
 li .redFont{
     color: #666666;
@@ -12,14 +14,15 @@ li .redFont{
 }
 table{
     position: relative;
-    top: 190px;
-    z-index: -1;
 }
 #firstBrank, #secondBrank, #thirdBrank{
     width: 980px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
 }
 .bottom{
     position: relative;
-    top: 200px;
     background-color: rgb(207, 94, 94);
 }
