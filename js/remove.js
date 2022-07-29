@@ -25,7 +25,7 @@ function handleToClickofBTN(){
             sessionStorage.removeItem("date2");
             sessionStorage.removeItem("date3");
             alert("방역기관 통보내역 삭제를 완료하였습니다");
-            location.href = '../html/main.html'
+            location.href = '../html/main.html';
         }
 }
 

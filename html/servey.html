@@ -13,9 +13,9 @@
 <link rel="stylesheet" href="../css/login.css">
 <script src="../js/move.js" defer></script>
 <link rel="stylesheet" href="../css/servey.css">
+<script src="../js/servey.js" defer></script>
 </head>
 <body>
-    <p class="foot"></p>
     <nav>
         <div class="pad">
                 <div class="Logo"></div>
@@ -63,6 +63,90 @@
                 </div>
             </div>
         </div>
+        <select name="lang" id="lang">
+            <option value="ko">한국어</option>
+            <option value="ko">한국어</option>
+            <option value="ko">한국어</option>
+            <option value="ko">한국어</option>
+            <option value="ko">한국어</option>
+            <option value="ko">한국어</option>
+        </select>
+        <div class="hind">
+            <p class="language">Language</p>
+            <i class="fa-solid fa-sort-down"></i>
+        </div>
+        <div class="bottomdiv">
+            <div class="words">
+                <p class="common">※ 이 설문지는 코로나-19 감염예방을 위하여 학생의 건강 상태를 확인하는 내용입니다.</p>
+                <p class="common">※ 설문에 성실하게 응답하여 주시기 바랍니다.</p>
+                <p class="common">※ 코로나19가 의심되는 경우 진단검사를 받아주세요.</p>
+            </div>
+        </div>
+        <div class="contentsDiv">
+            <div class="contentDiv">
+                <span class="headContent">
+                    1. 학생 본인이 코로나19 감염에 의심되는 아래의 임상증상*이 있나요?
+                </span>
+                <span class="orangeSpan">
+                    * 주요 임상증상 : 발열(37.5℃), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실
+                </span>
+                <span class="smallSpan">
+                    ※ 단 학교에서 선별진료소 검사결과(음성)를 확인 후 등교를 허용한 경우, 또는 선천성질환·만성질환(천식 등)으로 인한 증상인 경우 ‘아니오’를 선택하세요
+                </span>
+            </div>
+            <div class="radioInput">
+                <div>
+                    <input type="radio" name="first" value="no"> 아니오<br>
+                </div>
+                <div>
+                    <input type="radio" name="first" value="yes"> 예<br>
+                </div>
+            </div>
+            <div class="contentDiv">
+                <span class="headContent">
+                    2. 학생은 오늘(어제 저녁 포함) 신속항원검사(자가진단)를 실시했나요?
+                </span>
+                <span class="orangeSpan">
+                    코로나19 완치자의 경우, 확진일로부터 45일간 신속항원검사(자가진단)는 실시하지 않음(“검사하지 않음”으로 선택)
+                </span>
+            </div>
+            <div class="radioInput">
+                <div>
+                    <input type="radio" name="check" value="none"> 검사하지 않음<br>
+                </div>
+                <div>
+                    <input type="radio" name="check" value="good"> 음성<br>
+                </div>
+                <div>
+                    <input type="radio" name="check" value="bad"> 양성<br>
+                </div>
+            </div>
+            <div class="contentDiv">
+                <span class="headContent">
+                    3. 학생 본인이 PCR 등 검사를 받고 그 결과를 기다리고 있나요?
+                </span>
+            </div>
+            <div class="radioInput">
+                <div>
+                    <input type="radio" name="third" value="no"> 아니오<br>
+                </div>
+                <div>
+                    <input type="radio" name="third" value="yes"> 예<br>
+                </div>
+            </div>
+            <div class="contentDiv" id="noP">
+                <div class="middle">
+                    <span class="redSpan">【나의 동거인이 확진자인 경우】</span>
+                </div>
+                <span class="orangeSpan">
+                    <p>나의 동거인이 확진되어 재택치료중인 경우 10일간 수동감시 대상이 됩니다.</p>
+                    <p>☞ 확진자의 검사일(검체채취일) 기준 3일 내 PCR 검사(지정의료기관에 방문하여 전문가용 신속항원검사 대체 가능) 권고 및 6～7일차 신속항원검사 권고</p>
+                    <p>※ 검사 결과 확인시까지 등교 중지(자택 대기) 권고</p>
+                    <p>(동거인이 PCR 검사 또는 전문가용 신속항원검사를 받고 그 결과를 기다리고 있는 경우를 포함하되, 감염취약시설 종사자로 선제검사를 실시한 경우는 제외 )</p>
+                </span>
+            </div>
+        </div>
+        <button class="bottom" id="oriori">제출 / Submit</button>
     </div>
     <div class="move">
         <div class="content" id="a">

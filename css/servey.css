@@ -1,4 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y:auto;
+}
 .underNav{
     padding-bottom: 20px;
-    border-bottom: solid #c5c4c4 1px;
+    border-bottom: solid #dddcdc 1px;
+}
+select{
+    background-color: rgba( 255, 255, 255, 0.1 );
+    margin: 25px 0;
+    width: 100%;
+    height: 70px;
+    padding-left: 20px;
+    font-size: 28px;
+    color: rgb(109, 108, 108);
+    border: solid rgb(136, 136, 136) 1px;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: none;
+}
+.hind{
+    position: absolute;
+    border-left: solid rgb(136, 136, 136) 0.5px;
+    color: rgb(109, 108, 108);
+    width: 200px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-left: 30px;
+    font-size: 27px;
+    border-radius: 0 5px 5px 0;
+    top: 140px;
+    right: 70px;
+    z-index: -1;
+}
+.hind i {
+    position: relative;
+    left: 30px;
+    top: -5px;
+}
+.contentDiv{
+    border-top: 0.125em solid #409ece;
+    display: flex;
+    flex-direction: column;
+    background-color: #e7f3f7;
+    padding: 24.5px;
+    margin-top: 30px;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+}
+.headContent{
+    font-size: 27px;
+    color: #333333;
+    font-weight: bolder;
+}
+.orangeSpan{
+    background-color: #ffebce;
+    padding: 12px;
+    margin: 0 12px;
+    font-size: 24px;
+    border: 1px solid #999; 
+}
+.smallSpan{
+    margin: 0 12px;
+    font-size: 24px;
+}
+#noP .orangeSpan p{
+    margin: 0;
+    color: #ff0000;
+    font-size: 23px;
+}
+.redSpan{
+    color: #ff0000;
+    font-size: 28px;
+    font-weight: bolder;
+}
+.radioInput{
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.radioInput input{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.radioInput div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px 0 20px;
+    width: 1018px;
 }
