@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#I{
+    color:#c2c2c2;
+}
+#origina i{
+    color: #ffffff;
+}
+.underNav{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c2c2c2;
+}
+.midPdiv p{
+    font-size: 28px;
+    color: #666666;
+}
+span{
+    font-size: 12px;
+}
+.UpDiv{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.secondP{
+    margin: 0 10px;
+}
+.MidDiv{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.midPdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.midPdiv i{
+    font-size: 90px;
+    color: #22aef0;
+    margin: 20px 0 80px 0;
+}
+.BottomPs{
+    padding: 50px 30px;
+    background-color: #f0f7fd;
+    border: 1px solid #d1e3f2;
+    border-radius: 0.25em;
+}
+.UpPs{
+    font-size: 26px;
+    color: #666666;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.UpPs em{
+    color: #0b7bc0;
+}
+.UpPs p{
+    margin: 5px 0;
+}
+.midPdiv span{
+    position: relative;
+    top: -15px;
+}
