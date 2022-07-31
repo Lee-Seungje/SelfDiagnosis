@@ -1,4 +1,3 @@
-
 function addClick(){
     location.href = '../html/main.html';
     const grayFoot = document.querySelector(".grayFoot");
@@ -21,4 +20,4 @@ if((window.location.pathname)=='/html/comfirm.html'){
     dateP.innerText = `금일(${Sum})`;
     const rightNav = document.querySelector(".rightNav");
     rightNav.addEventListener("click", addClick);
-}
+}   

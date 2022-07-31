@@ -135,6 +135,24 @@ function changeColor(){
     }
 }
 
+function changeColorSecond(){
+    const OK = sessionStorage.getItem("OK");
+    if(OK){
+        const name = sessionStorage.getItem("name");
+        const WillP = document.querySelector(".won p");
+        WillP.style.color = "#0059b8";
+        WillP.innerText = '정상';
+        const grayFoot = document.querySelector(".grayFoot");
+        grayFoot.style.backgroundColor = "#2198ea";
+        const innerWill = document.querySelector(".innerWill");
+        const date = new Date();
+        const hours = String(date.getHours()).padStart(2, "0");
+        const minutes = String(date.getMinutes()).padStart(2, "0");
+        const seconds = String(date.getSeconds()).padStart(2, "0");
+        innerWill.innerText = `(${hours}:${minutes} ${name})`;
+    }
+}
+
 if((window.location.pathname)=='/html/infect.html'){
     noteFill();
     ConfirmationDate.addEventListener("input", handleToFirstInput);
@@ -143,5 +161,6 @@ if((window.location.pathname)=='/html/infect.html'){
 }
 if(((window.location.pathname)=='/html/main.html'))
 {
+    changeColorSecond();
     changeColor();
 }

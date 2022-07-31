@@ -6,18 +6,16 @@ function onClickFunction(){
     console.log(firstI.value, secondI.value);
     if((firstI.value == 'no')&&(secondI.value != 'bad')&&(thirdI.value == 'no'))
     {
+        sessionStorage.removeItem("OK");
+        sessionStorage.setItem("OK", true);
         location.href = '../html/comfirm.html';
     }
     else
     {
         alert("등교 중지입니다");
+        sessionStorage.removeItem("OK");
+        sessionStorage.setItem("OK", false);
     }
-
-
-
-
-
-
 
 }
 bottomBTN.addEventListener("click", onClickFunction);
